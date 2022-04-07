@@ -62,12 +62,12 @@ Fs = fileInfo.SampleRate;
 
 % y[n] = x[n] - ax[n-1]
 % Recommended to use 0.9 < a < 1.0
-preEmphB = [1 -0.70];
+preEmphB = [1 -0.95];
 preEmphA = [1];
 
 % De-emphasis, which basically reverses the pre-emphasis
 deEmphB = [1];
-deEmphA = [1 -0.70];
+deEmphA = [1 -0.95];
 
 if seeScope
     scope = dsp.SpectrumAnalyzer('SampleRate', Fs, ...
