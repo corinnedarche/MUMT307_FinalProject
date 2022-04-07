@@ -13,10 +13,10 @@ clear
 
 frameSize = 1600;
 
-% Add functionality for real-time I/O or preloading files
-realTimeOutput = true;
+% Adjust these booleans to toggle different features
+realTimeOutput = false;
 recordAudioInput = false;
-seeScope = true;
+seeScope = false;
 
 fileName = "";
 
