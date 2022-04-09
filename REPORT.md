@@ -43,7 +43,7 @@ There are three main boolean options that can be adjusted at the top of the scri
 	
 `realTimeOutput` indicates whether or not the script will play the audio output in real-time. If true, the audio plays as the script runs and does not save it as an external file. If false (default), the synthesized output is saved as "LPC_output.m4a".
 	
-`recordAudioInput` indicates whether or not the script allows the user to record their own voice for input. If true, the script records whatever speech the user says for approximately 5 seconds, saves it as "LPC_input.m4a", and then passes it through the LPC algorithm. If false (default), the user is prompted to enter a valid file name to use as input.
+`recordAudioInput` indicates whether or not the script allows the user to record their own voice for input. If true, the script records whatever speech the user says for approximately 5 seconds, saves it as "LPC_input.m4a", and then passes it through the LPC algorithm. If false (default), the user is prompted to enter a valid file name to use as input. This was taken from [MATLAB's Audio Toolbox Documentation](https://www.mathworks.com/help/audio/ref/audiodevicereader-system-object.html).
 	
 `seeScope` toggles the scope view of the synthesized signal and the curve produced by its LPC coefficients. It is automatically set to false.
 	
@@ -52,6 +52,8 @@ Adjust these boolean values as you see fit and hit run to watch the synthesis. I
 ### References
 
 MathWorks. 2022. "LPC Analysis and Synthesis of Speech." MathWorks. Accessed April 7, 2022. [https://www.mathworks.com/help/dsp/ug/lpc-analysis-and-synthesis-of-speech.html](https://www.mathworks.com/help/dsp/ug/lpc-analysis-and-synthesis-of-speech.html).
+
+MathWorks. 2022. "Record from sound card." MathWorks. Accessed April 9, 2022. [https://www.mathworks.com/help/audio/ref/audiodevicereader-system-object.html](https://www.mathworks.com/help/audio/ref/audiodevicereader-system-object.html).
 
 O'Shaughnessy, Douglas. 1998. "Linear Predictive Coding." *IEEE Potentials* 7 (1): 29-32.
 
