@@ -1,4 +1,4 @@
-# Implementation of Linear Predictive Coding (LPC) for Speech Analysis and Synthesis
+# Implementation of Linear Predictive Coding (LPC) for Speech Synthesis
 
 ## *Created by Corinne Darche for MUMT307: Music and Audio Computing II (Winter 2022)*
 
