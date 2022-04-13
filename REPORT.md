@@ -6,7 +6,7 @@
 
 Linear Predictive Coding (LPC) is a method for analyzing signals quickly and accurately. As described by O'Shaughnessy (1998), LPC's main draw is that it can accurately estimate vocal fold vibration, the vocal tract's shape, and the different vocal tract resonances. Sawant et al. (2010) went on to explain that LPC's technique predicts a small number of coefficients, which represent different speech parameters, that are then applied in digital filters to create a synthetic version of the original speech signal.
 	
-This Matlab script implements a version of the LPC algorithm to analyze and resynthesize an audio file, either with real-time I/O, pre-recorded and saved files, or a combination of the two.
+This Matlab script implements a version of the LPC algorithm to analyze and resynthesize an audio file, either with real-time I/O, pre-recorded and saved files, or a combination of the two. All code and example audio files are available to download in the project's [Github repository](https://github.com/corinnedarche/MUMT307_FinalProject).
 
 ### Project Goals
 
