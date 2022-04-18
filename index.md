@@ -44,9 +44,15 @@ This was a challenging subject to learn as an "outsider". A lot of the resources
 	
 Most of the literature that I found insisted on using a Hamming window to smooth out the signal. Based on what we've learned about windowing techniques, it's a logical choice since it smooths out the envelope and doesn't create a sharp ending on any of the frames. To further confirm my understanding, I tried swapping it out for a rectangular window or a triangular window, only to find that the output would get abruptly cut off before the end of the input file. Hanning and Blackman windows served as good substitutes for the Hamming window, since they have a similar spectra ([see Week 6 notes](https://www.music.mcgill.ca/~gary/307/week6/node12.html)). 
 	
-In my initial plan, I wanted to create a GUI for the script and turn it into a proper application. However, Matlab's GUI is awkward to use. The only option was to create a live script, but the formatting options did not fit the vision that I had in my head. I also wanted to focus less on creating a nice UI and stick to the main objectives of this project. As such, a simple Matlab script with user input at runtime ultimately served my project's purpose better than Matlab's GUI.
+In my initial plan, I wanted to create a Graphical User Interface (GUI) for the script and turn it into a proper application. However, Matlab's GUI is awkward to use. The only option was to create a live script, but the formatting options did not fit the vision that I had in my head. I also wanted to focus less on creating a nice UI and stick to the main objectives of this project. As such, a simple Matlab script with user input at runtime ultimately served my project's purpose better than Matlab's GUI.
 	
 LPC's primary objective is to reduce the bit-rate of the final resynthesized file. However, when seeing my implementation, I notice that my generated files are significantly larger than my pre-recorded ones. There is a possibility that Apple's algorithm for creating .m4a files on "Voice Memos" is significantly more space efficient than my LPC algorithm. It may be more useful to use ".wav" files rather than ".m4a" files to fully view LPC's compression.
+
+### Conclusions and Future Work
+
+This project allowed me to explore a specific speech synthesis algorithm at the forefront of speech processing. I successfully implemented the algorithm and created a practical script for users to experiment with. While MATLAB's shortcomings made me adjust my project, I still maintained my previously mentioned goals.
+
+In future work, I would like to keep exploring different speech synthesis techniques beyond LPC. I could look into formant-based synthesis and even machine learning methods for speech synthesis with Hidden Markov Models and Deep Learning. I would also like to add more features to this script specifically, like pitch bending. To get the GUI that I want, I would have to transfer this project off MATLAB into a different programming language, such as C++ or Python.
 
 ### References
 
